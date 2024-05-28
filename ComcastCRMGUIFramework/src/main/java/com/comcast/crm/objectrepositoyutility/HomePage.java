@@ -17,6 +17,9 @@ public class HomePage extends WebDriverUtility {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	@FindBy(linkText = "Products")
+	private WebElement productLink;
 
 	@FindBy(linkText = "Organizations")
 	private WebElement orgLink;
